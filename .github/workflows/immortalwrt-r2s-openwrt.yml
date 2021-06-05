@@ -3,6 +3,8 @@ name: NanoPi R2S ImmortalWrt
 on:
   repository_dispatch:
   workflow_dispatch:
+  schedule:
+    - cron: 0 16 * * *
 
 jobs:
   ImmortalWrt-18_06:
