@@ -1,7 +1,7 @@
 diff --git a/include/target.mk b/include/target.mk
 --- a/include/target.mk
 +++ b/include/target.mk
-@@ -202,7 +202,7 @@ LINUX_RECONF_DIFF = $(SCRIPT_DIR)/kconfig.pl - '>' $(call __linux_confcmd,$(filt
+@@ -203,7 +203,7 @@ LINUX_RECONF_DIFF = $(SCRIPT_DIR)/kconfig.pl - '>' $(call __linux_confcmd,$(filt
  ifeq ($(DUMP),1)
    BuildTarget=$(BuildTargets/DumpCurrent)
  
@@ -10,7 +10,7 @@ diff --git a/include/target.mk b/include/target.mk
    ifneq ($(findstring mips,$(ARCH)),)
      ifneq ($(findstring mips64,$(ARCH)),)
        CPU_TYPE ?= mips64
-@@ -243,7 +243,7 @@ ifeq ($(DUMP),1)
+@@ -244,7 +244,7 @@ ifeq ($(DUMP),1)
    endif
    ifeq ($(ARCH),aarch64)
      CPU_TYPE ?= generic
