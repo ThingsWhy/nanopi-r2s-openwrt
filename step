@@ -28,7 +28,9 @@ su hi
 
 screen -S hello
 
-cd /home/hi/immortalwrt && ./scripts/feeds update -a && ./scripts/feeds install -a
+cd /home/hi/immortalwrt
+
+./scripts/feeds update -a && ./scripts/feeds install -a
 
 patch -p1 < "/home/hi/nanopi-r2s-openwrt/patches/1806-modify_for_r2s.patch"
 
