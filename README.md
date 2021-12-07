@@ -21,7 +21,7 @@
 - ### Advantages
   To make you feel that everything is a matter of course.
 - ### Applications
-  AccessControl, ADbyby, CFDisk, DDNS, DiskMan, FRP, JingDong-DailyBonus, LRZSZ, MentoHUST, Multi-Dial,<br/>
+  AccessControl, ADbyby, CFDisk, DDNS, DiskMan, FRP, LRZSZ, MentoHUST, Multi-Dial,<br/>
  OLED, OpenClash, PassWall, Sensors, ServerChan, SoftetherVPN, SpeedTest-CLI, SQM, SSRPlus, Statistics,<br/>
  Stress, Tmate, UnblockNeteaseMusic, UPNP, Wake-On-LAN, WireGuard, ZeroTier etc.
 - - -
