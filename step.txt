@@ -22,7 +22,11 @@ chown -R hi:hi "immortalwrt"
 
 chown -R hi:hi "nanopi-r2s-openwrt"
 
-cd / && su hi && screen -S hello
+cd /
+
+su hi
+
+screen -S hello
 
 cd /home/hi/immortalwrt && ./scripts/feeds update -a && ./scripts/feeds install -a
 
