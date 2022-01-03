@@ -10,7 +10,7 @@ diff --git a/include/target.mk b/include/target.mk
    ifneq ($(findstring mips,$(ARCH)),)
      ifneq ($(findstring mips64,$(ARCH)),)
        CPU_TYPE ?= mips64
-@@ -244,7 +244,7 @@ ifeq ($(DUMP),1)
+@@ -245,7 +245,7 @@ ifeq ($(DUMP),1)
    endif
    ifeq ($(ARCH),aarch64)
      CPU_TYPE ?= generic
