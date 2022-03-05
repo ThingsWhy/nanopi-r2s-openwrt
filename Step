@@ -40,4 +40,4 @@ make defconfig
 
 make -j1 V=s
 
-./scripts/diffconfig.sh > 1806-seed.config
+## ./scripts/diffconfig.sh > 1806-seed.config
