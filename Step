@@ -39,3 +39,5 @@ cp -f "/home/hi/nanopi-r2s-openwrt/configs/1806-seed.config" ".config"
 make defconfig
 
 make -j1 V=s
+
+./scripts/diffconfig.sh > 1806-seed.config
