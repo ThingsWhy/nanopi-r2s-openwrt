@@ -88,8 +88,8 @@ function update_apt_source(){
 	curl -sL "https://dl.yarnpkg.com/debian/pubkey.gpg" -o "/etc/apt/trusted.gpg.d/yarn.asc"
 
 	cat <<-EOF >"/etc/apt/sources.list.d/gcc-toolchain.list"
-		deb http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu $UBUNTU_CODENAME main
-		deb-src http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu $UBUNTU_CODENAME main
+		deb http://launchpad.proxy.ustclug.org/ubuntu-toolchain-r/test/ubuntu $UBUNTU_CODENAME main
+		deb-src http://launchpad.proxy.ustclug.org/ubuntu-toolchain-r/test/ubuntu $UBUNTU_CODENAME main
 	EOF
 	curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x1e9377a2ba9ef27f" -o "/etc/apt/trusted.gpg.d/gcc-toolchain.asc"
 
@@ -100,12 +100,12 @@ function update_apt_source(){
 	curl -sL "https://apt.llvm.org/llvm-snapshot.gpg.key" -o "/etc/apt/trusted.gpg.d/llvm-toolchain.asc"
 
 	cat <<-EOF >"/etc/apt/sources.list.d/longsleep-ubuntu-golang-backports-$UBUNTU_CODENAME.list"
-		deb http://ppa.launchpad.net/longsleep/golang-backports/ubuntu $UBUNTU_CODENAME main
-		deb-src http://ppa.launchpad.net/longsleep/golang-backports/ubuntu $UBUNTU_CODENAME main
+		deb http://launchpad.proxy.ustclug.org/longsleep/golang-backports/ubuntu $UBUNTU_CODENAME main
+		deb-src http://launchpad.proxy.ustclug.org/longsleep/golang-backports/ubuntu $UBUNTU_CODENAME main
 	EOF
 	curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x52b59b1571a79dbc054901c0f6bc817356a3d45e" -o "/etc/apt/trusted.gpg.d/longsleep-ubuntu-golang-backports-$UBUNTU_CODENAME.asc"
 
-	[ -n "$CHN_NET" ] && sed -i "s,http://ppa.launchpad.net,https://launchpad.proxy.ustclug.org,g" "/etc/apt/sources.list.d"/*
+	[ -n "$CHN_NET" ] && sed -i "s,http://launchpad.proxy.ustclug.org,https://launchpad.proxy.ustclug.org,g" "/etc/apt/sources.list.d"/*
 
 	apt update -y
 
