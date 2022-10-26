@@ -171,14 +171,14 @@ function install_dependencies(){
 	chmod 0755 "/usr/bin/upx-ucl"
 	ln -svf "/usr/bin/upx-ucl" "/usr/bin/upx"
 
-	svn co -r96154 "https://ghproxy.com/https://github.com/openwrt/openwrt/trunk/tools/padjffs2/src" "padjffs2"
+	svn co -r96154 "https://github.com/openwrt/openwrt/trunk/tools/padjffs2/src" "padjffs2"
 	pushd "padjffs2"
 	make
 	rm -rf "/usr/bin/padjffs2"
 	cp -fp "padjffs2" "/usr/bin/padjffs2"
 	popd
 
-	svn co -r19250 "https://ghproxy.com/https://github.com/openwrt/luci/trunk/modules/luci-base/src" "po2lmo"
+	svn co -r19250 "https://github.com/openwrt/luci/trunk/modules/luci-base/src" "po2lmo"
 	pushd "po2lmo"
 	make po2lmo
 	rm -rf "/usr/bin/po2lmo"
