@@ -25,9 +25,6 @@
  OLED, OpenClash, PassWall, Sensors, ServerChan, SoftetherVPN, SpeedTest-CLI, SQM, SSRPlus, Statistics,<br/>
  Stress, Tmate, UnblockNeteaseMusic, UPNP, Wake-On-LAN, WireGuard, ZeroTier etc.
 - - -
-## Buy Me a Coffee
-[AFDian @CN\_SZTL](https://afdian.net/@CN\_SZTL/plan)
-- - -
 ## Announcement
 ### License
 [GNU General Public License v3.0](https://github.com/1715173329/nanopi-r2s-openwrt/blob/master/LICENSE)
